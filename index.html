@@ -1,0 +1,51 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="당신은 근육 부자 입니까?"/><link rel="icon" href="favicon.ico"><script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script><title>당신은 근육 부자 입니까? | 말씀광장</title><style>*{
+        margin: 0;
+        padding: 0;
+        color: #333;
+        font-family: 'Cafe24Ssurround';
+      }
+      ul,li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;
+        color: #333;
+      }
+      img{
+        border: none;
+      }</style><script defer="defer" src="js/chunk-vendors.79938677.js"></script><script defer="defer" src="js/app.702e760c.js"></script><link href="css/app.99beda83.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but matthew_muscle doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class="audio_area"><div class="wrap"><figure><figcaption>Listen to the T-Rex:</figcaption><audio id="audio_id" controls src="./memories.mp3">Your browser does not support the <code>audio</code> element.</audio></figure></div></div><div id="app"></div></body><script>var once=false;
+    $(document).on('click','body,html',function(e){
+      if(!once){
+        var avoid_target = $(e.target);
+        if(avoid_target.hasClass('icon_on') || avoid_target.hasClass('icon_off')){
+          once=true;  
+          return false;
+        }
+        once=true;
+        //$('.audio_area>.wrap>.btn_area>.switch').trigger('click');
+        $('.music_area>.music_icon').trigger('click');
+        return false;
+      }
+    });
+    // $('.music_area>.music_icon').click(function(){
+    //   var that = $(this);
+    //   var on = that.find('.icon_on');
+    //   var off = that.find('.icon_off');
+    //   var on_status = on.css('display');
+    //   var off_status = off.css('display');
+    //   if(on_status=='none' && off_status=='block'){
+    //     on.hide();
+    //     off.hide();
+    //     on.css({
+    //       display:'block'
+    //     });
+    //     document.getElementById('audio_id').play();
+    //   }else if(on_status=='block' && off_status=='none'){
+    //     on.hide();
+    //     off.hide();
+    //     off.css({
+    //       display:'block'
+    //     });
+    //     document.getElementById('audio_id').pause();
+    //   }
+    // })</script></html>
